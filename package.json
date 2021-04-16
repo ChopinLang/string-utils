@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "String manipulation and processing functions",
   "main": "src/index.js",
+  "type": "module",
   "homepage": "https://nyxlang.github.io/string-utils/",
   "exports": {
     ".": {
@@ -11,7 +12,9 @@
     }
   },
   "scripts": {
-    "build": "rm -fr dist/* && tsc -p tsconfig.json && tsc -p tsconfig-cjs.json && ./scripts/fixup.sh && parcel build src/index.js --out-file string-utils.js --no-cache",
+    "build": "rm -fr dist/* && npm run build:packages && npm run build:browser",
+    "build:packages": "tsc -p tsconfig.json && tsc -p tsconfig-cjs.json && node ./scripts/set-package-json.js",
+    "build:browser": "parcel build src/index.js --out-file string-utils.js --no-cache",
     "test": "jest",
     "test:all": "jest --all",
     "test:watch": "jest --watch",
@@ -35,6 +38,7 @@
   "bugs": {
     "url": "https://github.com/nyxlang/string-utils/issues"
   },
+  "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.13.15",
     "@babel/eslint-parser": "^7.13.14",
