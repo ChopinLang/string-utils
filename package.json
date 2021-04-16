@@ -2,11 +2,11 @@
   "name": "string-utils",
   "version": "0.0.1",
   "description": "String manipulation and processing functions",
-  "main": "index.js",
+  "main": "src/index.js",
   "homepage": "https://nyxlang.github.io/string-utils/",
   "exports": {
     ".": {
-      "import": "./dist/mjs/index.js",
+      "import": "./dist/es/index.js",
       "require": "./dist/cjs/index.js"
     }
   },
@@ -27,7 +27,10 @@
     "string",
     "utilities"
   ],
-  "author": "Jason Barr <jason@jasonsbarr.com>",
+  "author": {
+    "name": "Jason Barr",
+    "email": "jason@jasonsbarr.com"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/nyxlang/string-utils/issues"
@@ -45,6 +48,7 @@
     "jest": "^26.6.3",
     "jsdoc": "^3.6.6",
     "lint-staged": "^10.5.4",
+    "parcel-bundler": "^1.12.5",
     "prettier": "^2.2.1",
     "typescript": "^4.2.4"
   }
