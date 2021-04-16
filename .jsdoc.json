@@ -3,10 +3,10 @@
     "allowUnknownTags": true
   },
   "source": {
-    "include": "src/"
+    "include": ["src/", "README.md"]
   },
   "plugins": [
-    "plugin/markdown"
+    "plugins/markdown"
   ],
   "opts": {
     "encoding": "utf8",

@@ -4,7 +4,10 @@
   "description": "String manipulation and processing functions",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "test:all": "jest --all",
+    "test:watch": "jest --watch",
+    "docs": "jsdoc -c .jsdoc.json"
   },
   "repository": {
     "type": "git",
