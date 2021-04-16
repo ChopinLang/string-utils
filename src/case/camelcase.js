@@ -16,3 +16,5 @@
  * // => "itİsİstanbulNotConstantinople"
  */
 export default function camelCase(subject, locale = "en-US") {}
+
+("test");
