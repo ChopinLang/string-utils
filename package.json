@@ -1,0 +1,28 @@
+{
+  "name": "string-utils",
+  "version": "0.0.1",
+  "description": "String manipulation and processing functions",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nyxlang/string-utils.git"
+  },
+  "keywords": [
+    "string",
+    "utilities"
+  ],
+  "author": "Jason Barr <jason@jasonsbarr.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nyxlang/string-utils/issues"
+  },
+  "homepage": "https://github.com/nyxlang/string-utils#readme",
+  "devDependencies": {
+    "eslint": "^7.24.0",
+    "jest": "^26.6.3",
+    "prettier": "^2.2.1"
+  }
+}
