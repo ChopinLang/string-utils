@@ -13,7 +13,7 @@
  * su.camelCase("this_is_a_string")
  * // => "thisIsAString"
  * su.camelCase("   _-It is istanbul   not constantinople-_ ")
- * // => "itIsİstanbulNotConstantinople"
+ * // => "itİsİstanbulNotConstantinople"
  */
 function camelCase(subject, locale = "en-US") {}
 
