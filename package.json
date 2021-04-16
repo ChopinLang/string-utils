@@ -11,7 +11,7 @@
     }
   },
   "scripts": {
-    "build": "rm -fr dist/* && tsc -p tsconfig.json && tsc -p tsconfig-cjs.json && ./scripts/fixup.sh",
+    "build": "rm -fr dist/* && tsc -p tsconfig.json && tsc -p tsconfig-cjs.json && ./scripts/fixup.sh && parcel build src/index.js --out-file string-utils.js --no-cache",
     "test": "jest",
     "test:all": "jest --all",
     "test:watch": "jest --watch",
