@@ -8,7 +8,9 @@
     "test": "jest",
     "test:all": "jest --all",
     "test:watch": "jest --watch",
-    "docs": "jsdoc -c .jsdoc.json"
+    "docs": "jsdoc -c .jsdoc.json",
+    "prepare": "husky install",
+    "format": "prettier --write . && eslint --fix"
   },
   "repository": {
     "type": "git",
@@ -38,11 +40,5 @@
     "jsdoc": "^3.6.6",
     "lint-staged": "^10.5.4",
     "prettier": "^2.2.1"
-  },
-  "lint-staged": {
-    "*.{js|ts}": [
-      "prettier --write",
-      "eslint --fix"
-    ]
   }
 }
