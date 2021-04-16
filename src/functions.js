@@ -1,6 +1,7 @@
-const camelCase = require("./case/camelcase");
+/**
+ * Functions to change string casing
+ * @namespace Case
+ */
+import camelCase from "./case/camelcase";
 
-module.exports = {
-  // Case functions
-  camelCase,
-};
+export default { camelCase };

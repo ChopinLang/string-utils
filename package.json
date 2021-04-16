@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "String manipulation and processing functions",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "jest",
     "test:all": "jest --all",

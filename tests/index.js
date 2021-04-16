@@ -1,3 +1,3 @@
-const su = require("../src/functions");
+import stringUtils from "../src/functions";
 
-module.exports = su;
+export default stringUtils;

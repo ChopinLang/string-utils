@@ -15,6 +15,4 @@
  * su.camelCase("   _-It is istanbul   not constantinople-_ ")
  * // => "itİsİstanbulNotConstantinople"
  */
-function camelCase(subject, locale = "en-US") {}
-
-module.exports = camelCase;
+export default function camelCase(subject, locale = "en-US") {}
