@@ -4,7 +4,7 @@
  * @memberof Case
  * @param {string} subject The string to camelCase
  * @param {(string|string[])} [locale=en-US] The locale or locales to use for capitalization
- * @returns {string}
+ * @returns {string} the camelCased string with non-word characters stripped out
  * @throws {RangeError} if locale is not a valid language tag
  * @throws {TypeError} if an array element is not a string
  * @example
