@@ -1,5 +1,7 @@
 import ws from "unicode-default-word-boundary";
-import { coerceToString } from "../helpers/string";
+// node can't find this - why???
+import { coerceToString } from "../helpers/string.js";
+import { IS_PUNCTUATION } from "../helpers/regexp.js";
 
 /**
  * Splits a string into words using {@link http://www.unicode.org/reports/tr29/ Unicode UAX #29} and strips punctuation

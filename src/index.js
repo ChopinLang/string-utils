@@ -9,6 +9,7 @@ import camelCase from "./case/camelcase";
  * @namespace Split
  */
 import charCodes from "./split/charcodes";
+import words from "./split/words";
 
 export default {
   // Case
@@ -16,4 +17,5 @@ export default {
 
   // Split
   charCodes,
+  words,
 };
