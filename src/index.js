@@ -9,8 +9,9 @@ import capitalize from "./case/capitalize";
  * Functions to encode and decode strings
  * @namespace Encode
  */
-import encodeUTF8 from "./encode/encodeutf8";
 import decodeUTF8 from "./encode/decodeutf8";
+import decodeUTF16 from "./encode/decodeutf16";
+import encodeUTF8 from "./encode/encodeutf8";
 
 /**
  * Functions to query strings
@@ -25,14 +26,17 @@ import isString from "./query/isstring";
 import charCodes from "./split/charcodes";
 import words from "./split/words";
 
+// Can't use object property shorthand because
+// then JSDoc names functions incorrectly
 export default {
   // Case
   camelCase: camelCase,
   capitalize: capitalize,
 
   // Encode
-  encodeUTF8: encodeUTF8,
   decodeUTF8: decodeUTF8,
+  decodeUTF16: decodeUTF16,
+  encodeUTF8: encodeUTF8,
 
   // Query
   isString: isString,
