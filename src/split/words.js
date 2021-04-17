@@ -4,6 +4,8 @@ import { coerceToString } from "../helpers/string";
 /**
  * Splits a string into words using {@link http://www.unicode.org/reports/tr29/ Unicode UAX #29} and strips punctuation
  *
+ * @since 0.01
+ * @memberof Split
  * @param {string} subject String to split into words
  * @returns {string[]} An array of words
  */
