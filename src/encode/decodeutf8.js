@@ -12,11 +12,11 @@
  * // => "😀😁"
  */
 export default function decodeUTF8(data) {
-  var str = "",
+  let str = "",
     i;
 
   for (i = 0; i < data.length; i++) {
-    var value = data[i];
+    let value = data[i];
 
     if (value < 0x80) {
       str += String.fromCharCode(value);
