@@ -3,8 +3,8 @@ import su from "../../src";
 // skipping tests because for some reason Jest won't resolve a dependency
 // so it always throws an error even though when I run it in the
 // file I'm testing using node the output matches exactly
-describe("Splitting a string into words and stripping out punctuation", () => {
-  test.skip("It should split a string with all Latin characters", () => {
+describe.skip("Splitting a string into words and stripping out punctuation", () => {
+  test("It should split a string with all Latin characters", () => {
     const input = "The quick (“brown”) fox can’t jump 32.3 feet, right?";
     const output = [
       "The",
@@ -21,7 +21,7 @@ describe("Splitting a string into words and stripping out punctuation", () => {
     expect(su.words(input)).toEqual(output);
   });
 
-  test.skip("It should split a string with non-Latin characters (test 1)", () => {
+  test("It should split a string with non-Latin characters (test 1)", () => {
     const input = "В чащах юга жил бы цитрус? Да, но фальшивый экземпляр!";
     const output = [
       "В",
