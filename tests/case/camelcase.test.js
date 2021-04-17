@@ -1,4 +1,4 @@
-import su from "../index";
+import su from "../../src";
 
 describe("It should properly camelCase words based on their locale information", () => {
   test("A sentence of words, the first word capitalized, separated by spaces", () => {
