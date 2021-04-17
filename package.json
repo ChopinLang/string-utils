@@ -19,7 +19,7 @@
     "test:all": "jest --all",
     "test:watch": "jest --watch",
     "test:changed": "jest --onlyChanged",
-    "docs": "jsdoc -c .jsdoc.json",
+    "docs": "rm -rf docs/* && jsdoc -c .jsdoc.json",
     "prepare": "husky install",
     "format": "prettier --write . && eslint --fix"
   },

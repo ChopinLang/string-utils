@@ -3,6 +3,10 @@ import { coerceToString } from "../helpers/string.js";
 /**
  * Capitalizes the first letter of a string and lowercases the rest
  *
+ * @function capitalize
+ * @static
+ * @since 0.0.1
+ * @memberof Case
  * @param {string} subject String to capitalize
  * @param {(string|string[])} [locale=en-US] The locale or locales to use
  * @returns {string}

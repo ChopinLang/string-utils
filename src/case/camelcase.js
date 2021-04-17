@@ -4,6 +4,8 @@ import words from "../split/words.js";
 
 /**
  * Converts `subject` to {@link https://en.wikipedia.org/wiki/Camel_case camelCase}.
+ * @function camelCase
+ * @static
  * @since 0.0.1
  * @memberof Case
  * @param {string} subject The string to camelCase
