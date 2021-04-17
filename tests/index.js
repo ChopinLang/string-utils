@@ -1,3 +1,3 @@
-import stringUtils from "../src/functions";
+import stringUtils from "../src/";
 
 export default stringUtils;

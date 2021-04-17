@@ -4,4 +4,16 @@
  */
 import camelCase from "./case/camelcase";
 
-export default { camelCase };
+/**
+ * Functions to split a string
+ * @namespace Split
+ */
+import charCodes from "./split/charcodes";
+
+export default {
+  // Case
+  camelCase,
+
+  // Split
+  charCodes,
+};
