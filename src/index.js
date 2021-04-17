@@ -10,6 +10,7 @@ import capitalize from "./case/capitalize";
  * @namespace Encode
  */
 import encodeUTF8 from "./encode/encodeutf8";
+import decodeUTF8 from "./encode/decodeutf8";
 
 /**
  * Functions to query strings
@@ -31,6 +32,7 @@ export default {
 
   // Encode
   encodeUTF8,
+  decodeUTF8,
 
   // Query
   isString,
