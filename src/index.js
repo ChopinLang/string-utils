@@ -27,8 +27,8 @@ import words from "./split/words";
 
 export default {
   // Case
-  camelCase,
-  capitalize,
+  camelCase: camelCase,
+  capitalize: capitalize,
 
   // Encode
   encodeUTF8,
