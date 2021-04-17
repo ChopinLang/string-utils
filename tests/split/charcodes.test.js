@@ -1,9 +1,9 @@
-import su from "../index";
+import su from "../../src";
 
 describe("Split a string into numeric JS char codes", () => {
   test("It should split a string of basic Latin characters", () => {
     const input = "hello";
-    const output = [104, 101, 108, 111];
+    const output = [104, 101, 108, 108, 111];
 
     expect(su.charCodes(input)).toEqual(output);
   });
