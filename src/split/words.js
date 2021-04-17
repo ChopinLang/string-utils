@@ -13,7 +13,8 @@ import { IS_PUNCTUATION } from "../helpers/regexp.js";
  */
 function words(subject) {
   subject = coerceToString(subject);
-  return ws.split(subject).filter((word) => !IS_PUNCTUATION.test(word));
+  const sansUnderscores = subject.replace(/_/g, " ");
+  return ws.split(sansUnderscores).filter((word) => !IS_PUNCTUATION.test(word));
 }
 
 export default words;
