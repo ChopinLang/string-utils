@@ -6,6 +6,12 @@ import camelCase from "./case/camelcase";
 import capitalize from "./case/capitalize";
 
 /**
+ * Functions to encode and decode strings
+ * @namespace Encode
+ */
+import encodeUTF8 from "./encode/encodeutf8";
+
+/**
  * Functions to query strings
  * @namespace Query
  */
@@ -22,6 +28,9 @@ export default {
   // Case
   camelCase,
   capitalize,
+
+  // Encode
+  encodeUTF8,
 
   // Query
   isString,
