@@ -6,6 +6,12 @@ import camelCase from "./case/camelcase";
 import capitalize from "./case/capitalize";
 
 /**
+ * Functions to query strings
+ * @namespace Query
+ */
+import isString from "./query/isstring";
+
+/**
  * Functions to split a string
  * @namespace Split
  */
@@ -16,6 +22,9 @@ export default {
   // Case
   camelCase,
   capitalize,
+
+  // Query
+  isString,
 
   // Split
   charCodes,

@@ -1,4 +1,5 @@
-import { isNil, isString } from "./query.js";
+import { isNil } from "./null.js";
+import isString from "../query/isstring.js";
 
 /**
  * Coerce a value to its string representation. From {@link https://github.com/panzerdp/voca/blob/master/src/helper/string/coerce_to_string.js}
