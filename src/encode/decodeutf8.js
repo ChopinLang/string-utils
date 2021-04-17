@@ -5,8 +5,13 @@
  * @memberof Encode
  * @param {number[]} data Array of UTF-8 encoded bytes
  * @returns {string} Decoded string
+ * @example
+ * su.decodeUTF8([0x68, 0x65, 0x6c, 0x6c, 0x6f])
+ * // => "hello"
+ * su.decodeUTF8([0xf0, 0x9f, 0x98, 0x80, 0xf0, 0x9f, 0x98, 0x81])
+ * // => "😀😁"
  */
-export default function fromUTF8Array(data) {
+export default function decodeUTF8(data) {
   var str = "",
     i;
 
