@@ -8,7 +8,7 @@ import { isNil, isString } from "./query";
  * @param {*} value To coerce to a string
  * @returns {string}
  */
-function coerceToString(value) {
+export function coerceToString(value) {
   if (isNil(value)) {
     return "";
   }
@@ -17,5 +17,3 @@ function coerceToString(value) {
   }
   return String(value);
 }
-
-export default { coerceToString };

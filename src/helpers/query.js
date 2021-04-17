@@ -6,7 +6,7 @@
  * @param {*} value
  * @returns {boolean} `true` if value is `null` or `undefined`, else `false`
  */
-function isNil(value) {
+export function isNil(value) {
   return value == null;
 }
 
@@ -18,8 +18,6 @@ function isNil(value) {
  * @param {*} value The value to check
  * @returns {boolean} `true` if string
  */
-function isString(value) {
+export function isString(value) {
   return typeof value == "string";
 }
-
-export default { isNil, isString };
