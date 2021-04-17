@@ -3,6 +3,7 @@
  * @namespace Case
  */
 import camelCase from "./case/camelcase";
+import capitalize from "./case/capitalize";
 
 /**
  * Functions to split a string
@@ -14,6 +15,7 @@ import words from "./split/words";
 export default {
   // Case
   camelCase,
+  capitalize,
 
   // Split
   charCodes,
