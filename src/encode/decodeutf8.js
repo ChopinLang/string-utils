@@ -1,6 +1,8 @@
 /**
  * Decodes an array of UTF-8 bytes. From {@link https://gist.github.com/joni/3760795#gistcomment-1299119}.
  *
+ * @function decodeUTF8
+ * @static
  * @since 0.0.1
  * @memberof Encode
  * @param {number[]} data Array of UTF-8 encoded bytes

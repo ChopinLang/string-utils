@@ -3,6 +3,8 @@ import { coerceToString } from "../helpers/string.js";
 /**
  * Encodes a string into an array of UTF-8 code unit values. From {@link https://stackoverflow.com/a/18729931}
  *
+ * @function encodeUTF8
+ * @static
  * @since 0.0.1
  * @memberof Encode
  * @param {string} subject String to encode

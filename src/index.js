@@ -31,13 +31,13 @@ export default {
   capitalize: capitalize,
 
   // Encode
-  encodeUTF8,
-  decodeUTF8,
+  encodeUTF8: encodeUTF8,
+  decodeUTF8: decodeUTF8,
 
   // Query
-  isString,
+  isString: isString,
 
   // Split
-  charCodes,
-  words,
+  charCodes: charCodes,
+  words: words,
 };
