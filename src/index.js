@@ -26,6 +26,7 @@ import isString from "./query/isstring";
  * Functions to split a string
  * @namespace Split
  */
+import scalars from "./split/scalars";
 import words from "./split/words";
 
 // Can't use object property shorthand because
@@ -47,5 +48,6 @@ export default {
   isString: isString,
 
   // Split
+  scalars: scalars,
   words: words,
 };
