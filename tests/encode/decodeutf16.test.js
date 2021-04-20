@@ -2,9 +2,8 @@ import su from "../../src";
 
 describe("Decode array of UTF-16 char codes into a string", () => {
   test("It should decode an ASCII string", () => {
-    expect(su.decodeUTF16([0x0068, 0x0065, 0x006c, 0x006c, 0x006f])).toEqual(
-      "hello"
-    );
+    const input = [0x0068, 0x0065, 0x006c, 0x006c, 0x006f];
+    expect(su.decodeUTF16(input)).toEqual("hello");
   });
 
   test("It should decode a string of characters that require multiple char codes", () => {
