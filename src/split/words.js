@@ -1,5 +1,4 @@
 import ws from "unicode-default-word-boundary";
-// node can't find this - why???
 import { coerceToString } from "../helpers/string.js";
 import { IS_PUNCTUATION } from "../helpers/regexp.js";
 
