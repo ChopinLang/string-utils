@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Namespace: Query</title>
+    <title>JSDoc: Namespace: Join</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Namespace: Query</h1>
+    <h1 class="page-title">Namespace: Join</h1>
 
     
 
@@ -28,7 +28,7 @@
 
 <header>
     
-        <h2>Query</h2>
+        <h2>Join</h2>
         
     
 </header>
@@ -37,7 +37,7 @@
     <div class="container-overview">
     
         
-            <div class="description"><p>Functions to query strings</p></div>
+            <div class="description"><p>Functions to join strings</p></div>
         
 
         
@@ -106,7 +106,7 @@
     
 
     
-    <h4 class="name" id=".isString"><span class="type-signature">(static) </span>isString<span class="signature">(value)</span><span class="type-signature"> &rarr; {boolean}</span></h4>
+    <h4 class="name" id=".joinScalars"><span class="type-signature">(static) </span>joinScalars<span class="signature">(scalars)</span><span class="type-signature"> &rarr; {string}</span></h4>
     
 
     
@@ -114,7 +114,8 @@
 
 
 <div class="description">
-    <p>Checks if an object is a string. From <a href="https://github.com/panzerdp/voca/blob/master/src/query/is_string.js">https://github.com/panzerdp/voca/blob/master/src/query/is_string.js</a></p>
+    <p>Joins an array of Unicode scalars, each of which is
+the string value for a single Unicode code point</p>
 </div>
 
 
@@ -150,13 +151,13 @@
 
         <tr>
             
-                <td class="name"><code>value</code></td>
+                <td class="name"><code>scalars</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">*</span>
+<span class="param-type">Array.&lt;string></span>
 
 
             
@@ -166,7 +167,7 @@
 
             
 
-            <td class="description last"><p>The value to check</p></td>
+            <td class="description last"><p>An array of Unicode scalars</p></td>
         </tr>
 
     
@@ -233,10 +234,6 @@
 <h5>Returns:</h5>
 
         
-<div class="param-desc">
-    <p><code>true</code> if string</p>
-</div>
-
 
 
 <dl>
@@ -245,7 +242,7 @@
     </dt>
     <dd>
         
-<span class="param-type">boolean</span>
+<span class="param-type">string</span>
 
 
     </dd>
@@ -254,6 +251,14 @@
     
 
 
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>su.joinScalars(["h", "e", "l", "l", "o"])
+// => "hello"
+su.joinScalars(["😁", "🐶", "🍕"])
+// => "😁🐶🍕"</code></pre>
 
 
 
