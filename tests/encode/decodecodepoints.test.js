@@ -8,9 +8,9 @@ describe("Decode an array of Unicode code points into its string value", () => {
   });
 
   test("It should decode a string where each character is multiple code points", () => {
-    const input = [0xd83d, 0xde01, 0xd83d, 0xdc36, 0xd83c, 0xdf55];
+    const input = [0x1f601, 0x1f436, 0x1f355];
     const output = "😁🐶🍕";
 
-    expect(su.decodeCodePoints(input)).toEqual("😁🐶🍕");
+    expect(su.decodeCodePoints(input)).toEqual(output);
   });
 });
