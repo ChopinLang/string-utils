@@ -9,6 +9,7 @@ import capitalize from "./case/capitalize";
  * Functions to encode and decode strings
  * @namespace Encode
  */
+import decodeCodePoints from "./encode/decodecodepoints";
 import decodeUTF8 from "./encode/decodeutf8";
 import decodeUTF16 from "./encode/decodeutf16";
 import encodeUTF8 from "./encode/encodeutf8";
@@ -34,6 +35,7 @@ export default {
   capitalize: capitalize,
 
   // Encode
+  decodeCodePoints: decodeCodePoints,
   decodeUTF8: decodeUTF8,
   decodeUTF16: decodeUTF16,
   encodeUTF8: encodeUTF8,
