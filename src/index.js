@@ -17,6 +17,12 @@ import encodeUTF8 from "./encode/encodeutf8";
 import encodeUTF16 from "./encode/encodeutf16";
 
 /**
+ * Functions to join strings
+ * @namespace Join
+ */
+import joinScalars from "./join/joinscalars";
+
+/**
  * Functions to query strings
  * @namespace Query
  */
@@ -26,6 +32,7 @@ import isString from "./query/isstring";
  * Functions to split a string
  * @namespace Split
  */
+import graphemes from "./split/graphemes";
 import scalars from "./split/scalars";
 import words from "./split/words";
 
@@ -44,10 +51,14 @@ export default {
   encodeUTF8: encodeUTF8,
   encodeUTF16: encodeUTF16,
 
+  // Join
+  joinScalars: joinScalars,
+
   // Query
   isString: isString,
 
   // Split
+  graphemes: graphemes,
   scalars: scalars,
   words: words,
 };
