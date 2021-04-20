@@ -5,7 +5,7 @@ import { coerceToString } from "../helpers/string.js";
  * of which is represented by a single Unicode code point. Many
  * or even most JavaScript writers call this a "character."
  *
- * @function splitScalars
+ * @function scalars
  * @static
  * @since 0.01
  * @memberof Split
