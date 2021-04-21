@@ -45,4 +45,11 @@ describe("Splitting a string into words and stripping out punctuation", () => {
 
     expect(su.words(input)).toEqual(output);
   });
+
+  test("It should split a camelCased string", () => {
+    const input = "thisIsAStringToSplit";
+    const output = ["this", "Is", "A", "String", "To", "Split"];
+
+    expect(su.words(input)).toEqual(output);
+  });
 });

@@ -141,7 +141,7 @@ export const REGEXP_EXTENDED_ASCII = /^[\x01-\xFF\u0021-\u002F\u003A-\u0040\u005
  * @type {RegExp}
  * @ignore
  */
-export const REGEXP_LATIN_WORD = /([A-Z\xC0-\xD6\xD8-\xDE]?[a-z\xDF-\xF6\xF8-\xFF]+|[A-Z\xC0-\xD6\xD8-\xDE]+(?![a-z\xDF-\xF6\xF8-\xFF])|\d+)([\u0021-\u002F\u003A-\u0040\u005B-\u0060\u007B-\u007E\u00A1-\u00B1\u00B4-\u00B8\u00BA\u00BB\u00BF\u00D7\u00F7\u2000-\u206F\u2E00-\u2E7F]?[A-Z\xC0-\xD6\xD8-\xDEa-z\xDF-\xF6\xF8-\xFF\d]*)*/g;
+export const REGEXP_LATIN_WORD = /([A-Z\xC0-\xD6\xD8-\xDE]?[a-z\xDF-\xF6\xF8-\xFF]+|[A-Z\xC0-\xD6\xD8-\xDE]+(?![a-z\xDF-\xF6\xF8-\xFF])|\d+)([\u0021-\u002F\u003A-\u0040\u005B-\u0060\u007B-\u007E\u00A1-\u00B1\u00B4-\u00B8\u00BA\u00BB\u00BF\u00D7\u00F7\u2000-\u206F\u2E00-\u2E7F]([a-z\xDF-\xF6\xF8-\xFF]*[A-Z\xC0-\xD6\xD8-\xDE]*\d*)*)*/g;
 
 /**
  * Regular expression to match Unicode words with characters outside the Basic

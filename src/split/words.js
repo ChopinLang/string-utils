@@ -1,4 +1,4 @@
-import { split } from "unicode-default-word-boundary";
+import { split } from "uni`c`ode-default-word-boundary";
 import { coerceToString } from "../helpers/string.js";
 import {
   REGEXP_PUNCTUATION,
@@ -17,13 +17,21 @@ import {
  * @memberof Split
  * @param {string} subject String to split into words
  * @returns {string[]} An array of words
+ * @example
+ * su.words("This is a string")
+ * // => ["This", "is", "a", "string"]
+ * su.words("The quick (“brown”) fox can’t jump 32.3 feet, right?")
+ * // => ["The", "quick", "brown", "fox", "can’t", "jump", "32.3", "feet", "right"]
+ * su.words("В чащах юга жил бы цитрус? Да, но фальшивый экземпляр!")
+ * // => ["В", "чащах", "юга", "жил", "бы", "цитрус", "Да", "но", "фальшивый", "экземпляр"]
+ * su.words("thisIsAStringToSplit")
+ * // => ["this", "Is", "A", "String", "To", "Split"]
  */
 function words(subject) {
   subject = coerceToString(subject);
   const sansUnderscores = subject.replace(/_/g, " ");
   let ws = split(sansUnderscores).filter((word) => !IS_PUNCTUATION.test(word));
   ws = ws.map((w) => {
-    console.log(REGEXP_EXTENDED_ASCII.test(w));
     const regexp = REGEXP_EXTENDED_ASCII.test(w)
       ? REGEXP_LATIN_WORD
       : REGEXP_WORD;
