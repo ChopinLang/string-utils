@@ -13,6 +13,6 @@
  * su.join(["😁", "🐶", "🍕"], "-")
  * // => "😁-🐶-🍕"
  */
-export default function joinScalars(strings, sep = "") {
+export default function join(strings, sep = "") {
   return strings.join(sep);
 }
