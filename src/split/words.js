@@ -1,7 +1,6 @@
 import { split } from "unicode-default-word-boundary";
 import { coerceToString } from "../helpers/string.js";
 import {
-  REGEXP_PUNCTUATION,
   IS_PUNCTUATION,
   REGEXP_EXTENDED_ASCII,
   REGEXP_LATIN_WORD,
