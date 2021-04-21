@@ -1,5 +1,4 @@
 import { coerceToString } from "../helpers/string.js";
-import words from "../split/words.js";
 
 /**
  * Capitalizes the first letter of a string. If lower is true, downcases the rest
@@ -38,7 +37,7 @@ export default function capitalize(
     str = str[0] + str.slice(1).toLocaleLowerCase(locale);
   }
   if (all) {
-    const ws = words(str);
+    const ws = str.split(" ");
     str = ws.reduce((s, w, i, a) => {
       let st = w[0].toLocaleUpperCase(locale) + w.slice(1);
       if (i < a.length - 1) {
