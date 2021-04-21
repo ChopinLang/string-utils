@@ -54,7 +54,8 @@
     "lint-staged": "^10.5.4",
     "parcel-bundler": "^1.12.5",
     "prettier": "^2.2.1",
-    "typescript": "^4.2.4"
+    "typescript": "^4.2.4",
+    "voca": "^1.4.0"
   },
   "dependencies": {
     "unicode-default-word-boundary": "^13.0.0"
