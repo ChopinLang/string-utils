@@ -1,5 +1,7 @@
 import su from "../../src";
 
+// Skipping because for some reason Jest won't resolve
+// the import for the dependency module.
 describe.skip("Convert a string to PascalCase", () => {
   test("It should convert a string to PascalCase", () => {
     const input = "this IS some TEXT";
