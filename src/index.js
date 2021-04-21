@@ -20,7 +20,7 @@ import encodeUTF16 from "./encode/encodeutf16";
  * Functions to join strings
  * @namespace Join
  */
-import joinScalars from "./join/joinscalars";
+import join from "./join/join";
 
 /**
  * Functions to query strings
@@ -52,7 +52,7 @@ export default {
   encodeUTF16: encodeUTF16,
 
   // Join
-  joinScalars: joinScalars,
+  join: join,
 
   // Query
   isString: isString,
