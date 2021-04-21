@@ -23,6 +23,7 @@ function words(subject) {
   const sansUnderscores = subject.replace(/_/g, " ");
   let ws = split(sansUnderscores).filter((word) => !IS_PUNCTUATION.test(word));
   ws = ws.map((w) => {
+    console.log(REGEXP_EXTENDED_ASCII.test(w));
     const regexp = REGEXP_EXTENDED_ASCII.test(w)
       ? REGEXP_LATIN_WORD
       : REGEXP_WORD;
@@ -33,7 +34,7 @@ function words(subject) {
   });
   ws = ws.reduce((acc, w) => {
     if (Array.isArray(w)) {
-      acc.push(...w);
+      w.forEach((word) => acc.push(word));
       return acc;
     }
     return [...acc, w];
