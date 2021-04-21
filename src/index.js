@@ -38,6 +38,11 @@ import graphemes from "./split/graphemes";
 import scalars from "./split/scalars";
 import words from "./split/words";
 
+/**
+ * Functions to strip characters from a string
+ */
+import stripPunc from "./strip/strippunc";
+
 // Can't use object property shorthand because
 // then JSDoc names functions incorrectly
 export default {
@@ -65,4 +70,7 @@ export default {
   graphemes: graphemes,
   scalars: scalars,
   words: words,
+
+  // Strip
+  stripPunc: stripPunc,
 };
