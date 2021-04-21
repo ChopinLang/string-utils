@@ -5,7 +5,7 @@
  * @static
  * @since 0.0.1
  * @memberof Join
- * @param {string[]} scalars An array of Unicode scalars
+ * @param {string[]} strings An array of strings
  * @returns {string}
  * @example
  * su.join(["h", "e", "l", "l", "o"])
