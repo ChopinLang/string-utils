@@ -1,6 +1,7 @@
 import { coerceToString } from "../helpers/string.js";
 import capitalize from "./capitalize.js";
 import words from "../split/words.js";
+import stripPunc from "../strip/strippunc.js";
 
 /**
  * Converts `subject` to {@link https://en.wikipedia.org/wiki/Camel_case camelCase}.
@@ -27,8 +28,8 @@ export default function camelCase(subject, locale = "en-US") {
   return splitWords.reduce((str, word, i) => {
     const cased =
       i == 0
-        ? word.toLocaleLowerCase(locale)
-        : capitalize(word, { lower: true, locale });
+        ? stripPunc(word.toLocaleLowerCase(locale))
+        : stripPunc(capitalize(word, { lower: true, locale }));
     return str + cased;
   }, "");
 }

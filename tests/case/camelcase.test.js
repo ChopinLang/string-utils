@@ -19,4 +19,9 @@ describe("It should properly camelCase words based on their locale information",
       "ıtİsİstanbulNotConstantinople"
     );
   });
+
+  test("Should strip punctuation", () => {
+    let subject = "I can't do it, captain!";
+    expect(su.camelCase(subject)).toEqual("iCantDoItCaptain");
+  });
 });
