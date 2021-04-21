@@ -1,4 +1,4 @@
-import ws from "unicode-default-word-boundary";
+import { split } from "unicode-default-word-boundary";
 import { coerceToString } from "../helpers/string.js";
 import { IS_PUNCTUATION } from "../helpers/regexp.js";
 
@@ -15,7 +15,7 @@ import { IS_PUNCTUATION } from "../helpers/regexp.js";
 function words(subject) {
   subject = coerceToString(subject);
   const sansUnderscores = subject.replace(/_/g, " ");
-  return ws.split(sansUnderscores).filter((word) => !IS_PUNCTUATION.test(word));
+  return split(sansUnderscores).filter((word) => !IS_PUNCTUATION.test(word));
 }
 
 export default words;

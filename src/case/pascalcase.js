@@ -18,5 +18,8 @@ import capitalize from "./capitalize.js";
 export default function pascalCase(subject) {
   subject = coerceToString(subject);
   const ws = words(subject);
-  return ws.reduce((str, word) => (str += capitalize(word)), "");
+  return ws.reduce(
+    (str, word) => (str += capitalize(word, { lower: true })),
+    ""
+  );
 }
