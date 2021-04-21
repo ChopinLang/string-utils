@@ -4,6 +4,7 @@
  */
 import camelCase from "./case/camelcase";
 import capitalize from "./case/capitalize";
+import decapitalize from "./case/decapitalize";
 import pascalCase from "./case/pascalcase";
 
 /**
@@ -43,6 +44,7 @@ export default {
   // Case
   camelCase: camelCase,
   capitalize: capitalize,
+  decapitalize: decapitalize,
   pascalCase: pascalCase,
 
   // Encode
