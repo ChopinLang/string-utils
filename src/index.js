@@ -4,6 +4,7 @@
  */
 import camelCase from "./case/camelcase";
 import capitalize from "./case/capitalize";
+import pascalCase from "./case/pascalcase";
 
 /**
  * Functions to encode and decode strings
@@ -42,6 +43,7 @@ export default {
   // Case
   camelCase: camelCase,
   capitalize: capitalize,
+  pascalCase: pascalCase,
 
   // Encode
   decodeCodePoints: decodeCodePoints,
