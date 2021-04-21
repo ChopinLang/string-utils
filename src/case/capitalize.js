@@ -49,5 +49,3 @@ export default function capitalize(
   }
   return str;
 }
-
-console.log(capitalize("istanbul"));
