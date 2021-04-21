@@ -1,7 +1,7 @@
 import su from "../../src";
 
 // Skipping because su.words imports a dependency that breaks Jest
-describe.skip("Decapitalize a string based on the options passed in", () => {
+describe("Decapitalize a string based on the options passed in", () => {
   test("It should decapitalize the first character in a string", () => {
     expect(su.decapitalize("This Is A String")).toEqual("this Is A String");
   });
