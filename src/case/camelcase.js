@@ -26,7 +26,9 @@ export default function camelCase(subject, locale = "en-US") {
   const splitWords = words(subject);
   return splitWords.reduce((str, word, i) => {
     const cased =
-      i == 0 ? word.toLocaleLowerCase(locale) : capitalize(word, locale);
+      i == 0
+        ? word.toLocaleLowerCase(locale)
+        : capitalize(word, { lower: true, locale });
     return str + cased;
   }, "");
 }
