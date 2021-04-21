@@ -1,4 +1,4 @@
-import { split } from "uni`c`ode-default-word-boundary";
+import { split } from "unicode-default-word-boundary";
 import { coerceToString } from "../helpers/string.js";
 import {
   REGEXP_PUNCTUATION,
