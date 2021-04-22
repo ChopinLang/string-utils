@@ -1,5 +1,5 @@
 import { split } from "unicode-default-word-boundary";
-import { coerceToString } from "../helpers/string.js";
+import helpers from "@nyxlang/helpers";
 import {
   isRegExp,
   IS_PUNCTUATION,
@@ -7,7 +7,8 @@ import {
   REGEXP_LATIN_WORD,
   REGEXP_WORD,
 } from "../helpers/regexp.js";
-import { isNil, nilDefault } from "../helpers/null.js";
+
+const { coerceToString, isNil, nilDefault } = helpers;
 
 /**
  * Splits a string into words using {@link http://www.unicode.org/reports/tr29/ Unicode UAX #29} and strips punctuation

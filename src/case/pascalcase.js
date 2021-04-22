@@ -1,7 +1,9 @@
-import { coerceToString } from "../helpers/string.js";
+import helpers from "@nyxlang/helpers";
 import words from "../split/words.js";
 import capitalize from "./capitalize.js";
 import stripPunc from "../strip/strippunc.js";
+
+const { coerceToString } = helpers;
 
 /**
  * Convert a string to PascalCase

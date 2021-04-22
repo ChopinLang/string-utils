@@ -1,4 +1,5 @@
-import { coerceToString } from "../helpers/string.js";
+import helpers from "@nyxlang/helpers";
+const { coerceToString } = helpers;
 
 /**
  * Capitalizes the first letter of a string. If lower is true, downcases the rest

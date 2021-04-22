@@ -1,5 +1,7 @@
-import { coerceToString } from "../helpers/string.js";
+import helpers from "@nyxlang/helpers";
 import words from "../split/words.js";
+
+const { coerceToString } = helpers;
 
 /**
  * Convert a string to lowercase with hyphens between the words
