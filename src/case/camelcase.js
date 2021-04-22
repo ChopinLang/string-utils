@@ -35,5 +35,3 @@ export default function camelCase(subject, locale = "en-US") {
     return str + cased;
   }, "");
 }
-
-console.log(coerceToString({}));
