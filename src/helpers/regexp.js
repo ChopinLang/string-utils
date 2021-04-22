@@ -106,6 +106,15 @@ const generalPunctuationBlock = "\\u2000-\\u206F";
 const supplementalPunctuationBlock = "\\u2E00-\\u2E7F";
 
 /**
+ * Regular expression to match whitespace and separator chars that should be trimmed
+ *
+ * @type {string}
+ * @ignore
+ */
+export const TRIM_CHARS =
+  "\\u0009\\u000A\\u000B\\u000C\\u000D\\u0020\\u00A0\\u1680\\u180E\\u2000\\u2001\\u2002\\u2003\\u2004\\u2005\\u2006\\u2007\\u2008\\u2009\\u200A\\u200B\\u202F\\u205F\\u2028\\u2029\\u3000\\uFEFF";
+
+/**
  * Regular expression to match punctuation
  *
  * Note that there are still several obscure punctuation marks in other
