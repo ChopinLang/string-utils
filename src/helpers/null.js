@@ -21,3 +21,11 @@ export function isNil(value) {
 export function nilDefault(value, defaultValue) {
   return value == null ? defaultValue : value;
 }
+
+export function isNull(value) {
+  return value === null;
+}
+
+export function isUndefined(value) {
+  return value === undefined;
+}
