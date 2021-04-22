@@ -1,4 +1,4 @@
-import su from "../../src";
+import { su } from "../../src";
 
 describe("Convert a string to kebab case", () => {
   test("It should convert a string with spaces", () => {

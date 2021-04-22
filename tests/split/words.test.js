@@ -1,4 +1,4 @@
-import su from "../../src";
+import { su } from "../../src";
 
 // skipping tests because for some reason Jest won't resolve a dependency
 // so it always throws an error even though when I run it in the

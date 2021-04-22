@@ -1,4 +1,4 @@
-import su from "../../src";
+import { su } from "../../src";
 
 describe("Split a string into its extended grapheme clusters", () => {
   test("It should split a simple string where code points correspond to grapheme clusters", () => {

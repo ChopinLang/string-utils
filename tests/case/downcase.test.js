@@ -1,4 +1,4 @@
-import su from "../../src";
+import { su } from "../../src";
 
 describe("Convert a string to lowercase", () => {
   test("It should convert a string to lowercase", () => {

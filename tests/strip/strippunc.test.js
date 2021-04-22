@@ -1,4 +1,4 @@
-import su from "../../src";
+import { su } from "../../src";
 
 describe("Strip the punctuation characters from a string", () => {
   test("It should strip punctuation from a string", () => {
