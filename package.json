@@ -1,5 +1,5 @@
 {
-  "name": "string-utils",
+  "name": "@nyxlang/string-utils",
   "version": "0.0.1",
   "description": "String manipulation and processing functions",
   "main": "src/index.js",
@@ -31,10 +31,7 @@
     "string",
     "utilities"
   ],
-  "author": {
-    "name": "Jason Barr",
-    "email": "jason@jasonsbarr.com"
-  },
+  "author": "Jason Barr <jason@jasonsbarr.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/nyxlang/string-utils/issues"
@@ -60,5 +57,9 @@
   "dependencies": {
     "@nyxlang/helpers": "^0.0.2",
     "unicode-default-word-boundary": "^13.0.0"
+  },
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
   }
 }
