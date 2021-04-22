@@ -1,2 +1,2 @@
-export default su;
+export { su };
 import su from "./functions.js";

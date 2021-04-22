@@ -13,7 +13,7 @@ The package is not yet published on NPM, so you'll need to clone (or download an
 You can use the ES2015 import statement to include the package:
 
 ```js
-import su from "string-utils";
+import { su } from "string-utils";
 ```
 
 Or if you need CommonJS you can require it:
