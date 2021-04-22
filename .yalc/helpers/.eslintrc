@@ -10,10 +10,7 @@
     "browser": true,
     "jest": true
   },
-  "plugins": [
-    "jsdoc",
-    "prettier"
-  ],
+  "plugins": ["jsdoc", "prettier"],
   "rules": {
     "prettier/prettier": "error",
     "indent": [
@@ -23,17 +20,9 @@
         "SwitchCase": 1
       }
     ],
-    "brace-style": [
-      "error",
-      "1tbs"
-    ],
+    "brace-style": ["error", "1tbs"],
     "no-control-regex": "off",
     "no-misleading-character-class": "off"
   },
-  "ignorePatterns": [
-    "node_modules/",
-    "dist/",
-    "docs/",
-    "src/vendor/"
-  ]
+  "ignorePatterns": ["node_modules/", "dist/", "docs/", "src/vendor/"]
 }
