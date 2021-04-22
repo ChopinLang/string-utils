@@ -15,9 +15,9 @@ const { coerceToString } = helpers;
  * @param {string} subject String to split into graphemes
  * @returns {string[]} An array of graphemes
  * @example
- * su.graphemes("hello")
+ * graphemes("hello")
  * // => ["h", "e", "l", "l", "o"]
- * su.graphemes("अनुच्छेद")
+ * graphemes("अनुच्छेद")
  * // => ['अ', 'नु', 'च्', 'छे', 'द']
  */
 export default function graphemes(subject) {

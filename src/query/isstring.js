@@ -8,6 +8,9 @@
  * @function isString
  * @param {*} value The value to check
  * @returns {boolean} `true` if string
+ * @example
+ * isString("hello")
+ * // => true
  */
 export default function isString(value) {
   return (

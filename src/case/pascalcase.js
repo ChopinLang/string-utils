@@ -15,7 +15,7 @@ const { coerceToString } = helpers;
  * @param {string} subject The string to convert to PascalCase
  * @returns {string}
  * @example
- * su.pascalCase("this IS some TEXT")
+ * pascalCase("this IS some TEXT")
  * // => "ThisIsSomeText"
  */
 export default function pascalCase(subject) {
