@@ -58,7 +58,6 @@
     "voca": "^1.4.0"
   },
   "dependencies": {
-    "helpers": "file:.yalc/helpers",
     "unicode-default-word-boundary": "^13.0.0"
   }
 }
