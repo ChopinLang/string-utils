@@ -6,32 +6,44 @@ We spend nearly as much time on the documentation as on the code to make sure yo
 
 ## Installation
 
-The package is not yet published on NPM, so you'll need to clone (or download and unzip) the repo into your dependencies folder to install it.
+```
+npm install @nyxlang/string-utils
+```
 
 ## Usage
 
 You can use the ES2015 import statement to include the package:
 
 ```js
-import { su } from "string-utils";
+import * as su from "@nyxlang/string-utils";
 ```
 
 Or if you need CommonJS you can require it:
 
 ```js
-const su = require("string-utils");
+const su = require("@nyxlang/string-utils");
+```
+
+Or simply import the individual functions you need:
+
+```js
+// ES2015 import
+import { camelCase, decodeUTF8, graphemes } from "@nyxlang/string-utils";
+
+// CommonJS
+const { camelCase, decodeUTF8, graphemes } = require("@nyxlang/string-utils");
 ```
 
 Then simply call library functions as methods on the `su` object:
 
 ```js
-su.camelcase("++this-__is-spartaaaaa++");
+camelcase("++this-__is-spartaaaaa++");
 // => "thisIsSpartaaaaa"
 
-su.graphemes("अनुच्छेद");
+graphemes("अनुच्छेद");
 // => ["अ", "नु", "च्", "छे", "द"]
 
-su.decodeUTF8([0xf0, 0x9f, 0x98, 0x80, 0xf0, 0x9f, 0x98, 0x81]);
+decodeUTF8([0xf0, 0x9f, 0x98, 0x80, 0xf0, 0x9f, 0x98, 0x81]);
 // => "😀😁"
 ```
 
