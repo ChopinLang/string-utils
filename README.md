@@ -34,3 +34,5 @@ su.graphemes("अनुच्छेद");
 su.decodeUTF8([0xf0, 0x9f, 0x98, 0x80, 0xf0, 0x9f, 0x98, 0x81]);
 // => "😀😁"
 ```
+
+[Complete API documentation](https://nyxlang.github.io/string-utils/)
