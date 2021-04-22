@@ -1,6 +1,7 @@
 import { split } from "unicode-default-word-boundary";
 import { coerceToString } from "../helpers/string.js";
 import {
+  isRegExp,
   IS_PUNCTUATION,
   REGEXP_EXTENDED_ASCII,
   REGEXP_LATIN_WORD,
@@ -50,7 +51,7 @@ function words(subject, pattern, flags) {
       return [...acc, w];
     }, []);
     return ws;
-  } else if (pattern instanceof RegExp) {
+  } else if (isRegExp(pattern)) {
     regexp = pattern;
   } else {
     const flagString = coerceToString(nilDefault(flags, ""));
