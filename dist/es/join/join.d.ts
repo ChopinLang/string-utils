@@ -9,9 +9,9 @@
  * @param {string} [sep=""] Separator to insert between strings
  * @returns {string}
  * @example
- * su.join(["h", "e", "l", "l", "o"])
+ * join(["h", "e", "l", "l", "o"])
  * // => "hello"
- * su.join(["😁", "🐶", "🍕"], "-")
+ * join(["😁", "🐶", "🍕"], "-")
  * // => "😁-🐶-🍕"
  */
 export default function join(strings: string[], sep?: string | undefined): string;

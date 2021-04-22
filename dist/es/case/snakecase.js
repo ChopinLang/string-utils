@@ -16,9 +16,9 @@ const { coerceToString } = helpers;
  * @throws {RangeError} if locale is not a valid language tag
  * @throws {TypeError} if an array element in the locale param is not a string
  * @example
- * su.snakeCase("This is a string")
+ * snakeCase("This is a string")
  * // => "this_is_a_string"
- * su.snakeCase("thisIsAString", { upper: true })
+ * snakeCase("thisIsAString", { upper: true })
  * // => "THIS_IS_A_STRING"
  */
 export default function snakeCase(subject, { upper = false, locale = "en-US" } = {}) {

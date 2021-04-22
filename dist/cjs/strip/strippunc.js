@@ -16,7 +16,7 @@ const { coerceToString } = helpers_1.default;
  * @param {string} subject String to strip punctuation from
  * @returns {string}
  * @example
- * su.stripPunc("I can't do it, captain!")
+ * stripPunc("I can't do it, captain!")
  * // => "I cant do it captain"
  */
 function stripPunc(subject) {

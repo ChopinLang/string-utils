@@ -11,9 +11,9 @@ Object.defineProperty(exports, "__esModule", { value: true });
  * @param {string} [sep=""] Separator to insert between strings
  * @returns {string}
  * @example
- * su.join(["h", "e", "l", "l", "o"])
+ * join(["h", "e", "l", "l", "o"])
  * // => "hello"
- * su.join(["😁", "🐶", "🍕"], "-")
+ * join(["😁", "🐶", "🍕"], "-")
  * // => "😁-🐶-🍕"
  */
 function join(strings, sep = "") {

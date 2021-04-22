@@ -17,9 +17,9 @@ const { coerceToString } = helpers_1.default;
  * @param {string} subject String to split
  * @returns {string[]} An array of Unicode scalars
  * @example
- * su.scalars("hello")
+ * scalars("hello")
  * // => ["h", "e", "l", "l", "o"]
- * su.scalars("😁🐶🍕")
+ * scalars("😁🐶🍕")
  * // => ["😁", "🐶", "🍕"]
  */
 function scalars(subject) {

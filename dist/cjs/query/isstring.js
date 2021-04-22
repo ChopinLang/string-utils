@@ -10,6 +10,9 @@ Object.defineProperty(exports, "__esModule", { value: true });
  * @function isString
  * @param {*} value The value to check
  * @returns {boolean} `true` if string
+ * @example
+ * isString("hello")
+ * // => true
  */
 function isString(value) {
     return (typeof value == "string" ||

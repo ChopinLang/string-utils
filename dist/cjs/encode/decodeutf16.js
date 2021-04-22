@@ -10,9 +10,9 @@ Object.defineProperty(exports, "__esModule", { value: true });
  * @param {number[]} codes
  * @returns {string}
  * @example
- * su.decodeUTF16([0x0068, 0x0065, 0x006c, 0x006c, 0x006f])
+ * decodeUTF16([0x0068, 0x0065, 0x006c, 0x006c, 0x006f])
  * // => "hello"
- * su.decodeUTF16([0xd83d, 0xde01, 0xd83d, 0xdc36, 0xd83c, 0xdf55])
+ * decodeUTF16([0xd83d, 0xde01, 0xd83d, 0xdc36, 0xd83c, 0xdf55])
  * // => "😁🐶🍕"
  */
 function decodeUTF16(codes) {

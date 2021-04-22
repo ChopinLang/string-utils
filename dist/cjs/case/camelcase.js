@@ -20,11 +20,11 @@ const { coerceToString } = helpers_1.default;
  * @throws {RangeError} if locale is not a valid language tag
  * @throws {TypeError} if an array element is not a string
  * @example
- * su.camelCase("bird flight")
+ * camelCase("bird flight")
  * // => "birdFlight"
- * su.camelCase("this_is_a_string")
+ * camelCase("this_is_a_string")
  * // => "thisIsAString"
- * su.camelCase("   _-It is istanbul   not constantinople-_ ", "TR")
+ * camelCase("   _-It is istanbul   not constantinople-_ ", "TR")
  * // => "itİsİstanbulNotConstantinople"
  */
 function camelCase(subject, locale = "en-US") {

@@ -12,9 +12,9 @@ const { coerceToString } = helpers;
  * @throws {RangeError} if locale is not a valid language tag
  * @throws {TypeError} if an array element in the locale param is not a string
  * @example
- * su.downcase("This IS A StRiNg")
+ * downcase("This IS A StRiNg")
  * // => "this is a string"
- * su.downcase("İSTANBUL")
+ * downcase("İSTANBUL")
  * // => "i̇stanbul"
  */
 export default function downcase(subject, locale = "en-US") {

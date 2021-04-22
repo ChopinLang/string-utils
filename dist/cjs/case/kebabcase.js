@@ -15,9 +15,9 @@ const { coerceToString } = helpers_1.default;
  * @throws {RangeError} if locale is not a valid language tag
  * @throws {TypeError} if an array element in the locale param is not a string
  * @example
- * su.kebabCase("Convert this to kebab case")
+ * kebabCase("Convert this to kebab case")
  * // => "convert-this-to-kebab-case"
- * su.kebabCase("convertThisToKebabCase")
+ * kebabCase("convertThisToKebabCase")
  * // => "convert-this-to-kebab-case"
  */
 function kebabCase(subject, locale = "en-US") {

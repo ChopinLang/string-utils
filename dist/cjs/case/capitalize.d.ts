@@ -16,13 +16,13 @@
  * @throws {RangeError} if locale is not a valid language tag
  * @throws {TypeError} if an array element in the locale param is not a string
  * @example
- * su.capitalize("thIs Is a String to CAPITALIZE")
+ * capitalize("thIs Is a String to CAPITALIZE")
  * // => "ThIs Is a String to CAPITALIZE"
- * su.capitalize("thIs Is a String to CAPITALIZE", { lower: true })
+ * capitalize("thIs Is a String to CAPITALIZE", { lower: true })
  * // => "This is a string to capitalize"
- * su.capitalize("thIs Is a String to CAPITALIZE", { lower: true, all: true })
+ * capitalize("thIs Is a String to CAPITALIZE", { lower: true, all: true })
  * // => "This Is A String To Capitalize"
- * su.capitalize("istanbul", { locale: "TR" })
+ * capitalize("istanbul", { locale: "TR" })
  * // => İstanbul
  */
 export default function capitalize(subject: string, { lower, all, locale }?: {

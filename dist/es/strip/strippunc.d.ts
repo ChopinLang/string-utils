@@ -8,7 +8,7 @@
  * @param {string} subject String to strip punctuation from
  * @returns {string}
  * @example
- * su.stripPunc("I can't do it, captain!")
+ * stripPunc("I can't do it, captain!")
  * // => "I cant do it captain"
  */
 export default function stripPunc(subject: string): string;

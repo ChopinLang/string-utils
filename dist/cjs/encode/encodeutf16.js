@@ -15,13 +15,13 @@ const { coerceToString } = helpers_1.default;
  * @param {string} subject The string to split
  * @returns {number[]} An array of numeric char codes
  * @example
- * su.charCodes("hello")
+ * encodeUTF16("hello")
  * // => [104, 101, 108, 108, 111];
- * su.charCodes("😁🐶🍕")
+ * encodeUTF16("😁🐶🍕")
  * // => [55357, 56833, 55357, 56374, 55356, 57173]
  */
-function charCodes(subject) {
+function encodeUTF16(subject) {
     subject = coerceToString(subject);
     return subject.split("").map((char) => char.charCodeAt(0));
 }
-exports.default = charCodes;
+exports.default = encodeUTF16;

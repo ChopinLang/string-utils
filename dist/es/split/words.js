@@ -12,13 +12,13 @@ const { coerceToString, isNil, isRegExp, nilDefault } = helpers;
  * @param {string} subject String to split into words
  * @returns {string[]} An array of words
  * @example
- * su.words("This is a string")
+ * words("This is a string")
  * // => ["This", "is", "a", "string"]
- * su.words("The quick (“brown”) fox can’t jump 32.3 feet, right?")
+ * words("The quick (“brown”) fox can’t jump 32.3 feet, right?")
  * // => ["The", "quick", "brown", "fox", "can’t", "jump", "32.3", "feet", "right"]
- * su.words("В чащах юга жил бы цитрус? Да, но фальшивый экземпляр!")
+ * words("В чащах юга жил бы цитрус? Да, но фальшивый экземпляр!")
  * // => ["В", "чащах", "юга", "жил", "бы", "цитрус", "Да", "но", "фальшивый", "экземпляр"]
- * su.words("thisIsAStringToSplit")
+ * words("thisIsAStringToSplit")
  * // => ["this", "Is", "A", "String", "To", "Split"]
  */
 function words(subject, pattern, flags) {

@@ -10,9 +10,9 @@ Object.defineProperty(exports, "__esModule", { value: true });
  * @param {number[]} data An array of Unicode code points
  * @returns {string}
  * @example
- * su.decodeCodePoints([0x0068, 0x0065, 0x006c, 0x006c, 0x006f])
+ * decodeCodePoints([0x0068, 0x0065, 0x006c, 0x006c, 0x006f])
  * // => "hello"
- * su.decodeCodePoints([0x1f601, 0x1f436, 0x1f355])
+ * decodeCodePoints([0x1f601, 0x1f436, 0x1f355])
  * // => "😁🐶🍕"
  */
 function decodeCodePoints(data) {
