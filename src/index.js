@@ -1,3 +1,3 @@
-import su from "./functions";
+import su from "./functions.js";
 
 export default su;
