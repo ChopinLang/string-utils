@@ -1,6 +1,6 @@
 {
   "name": "@nyxlang/string-utils",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "String manipulation and processing functions",
   "main": "src/index.js",
   "type": "module",
@@ -15,7 +15,7 @@
     "build": "rm -fr dist/* && npm run build:packages && npm run build:browser",
     "build:packages": "tsc -p tsconfig.json && tsc -p tsconfig-cjs.json && node ./scripts/set-package-json.js",
     "build:browser": "parcel build src/index.js --out-file string-utils.js --no-cache",
-    "publish": "npm run build && npm run docs && git add . && git commit -m 'Publish to NPM' && git push && npm publish",
+    "publish-package": "npm run build && npm run docs && git add . && git commit -m 'Publish to NPM' && git push && npm publish",
     "test": "jest",
     "test:all": "jest --all",
     "test:watch": "jest --watch",
