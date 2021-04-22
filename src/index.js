@@ -5,6 +5,7 @@
 import camelCase from "./case/camelcase";
 import capitalize from "./case/capitalize";
 import decapitalize from "./case/decapitalize";
+import downcase from "./case/downcase";
 import kebabCase from "./case/kebabcase";
 import pascalCase from "./case/pascalcase";
 
@@ -51,6 +52,7 @@ export default {
   camelCase: camelCase,
   capitalize: capitalize,
   decapitalize: decapitalize,
+  downcase: downcase,
   kebabCase: kebabCase,
   pascalCase: pascalCase,
 
