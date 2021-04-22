@@ -11,7 +11,9 @@
       "require": "./dist/cjs/index.js"
     }
   },
-  "files": ["dist/"],
+  "files": [
+    "dist/"
+  ],
   "scripts": {
     "build": "rm -rf dist/ && tsc -p tsconfig.json && tsc -p tsconfig-cjs.json && node ./scripts/set-package-json.js",
     "publish-package": "npm run build && npm run docs && git add . && git commit -m 'Publish to NPM' && git push && npm publish",
