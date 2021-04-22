@@ -7,3 +7,10 @@ export function isNumber(obj) {
 export function isBigInt(obj) {
   return typeof obj == "bigint";
 }
+
+export function handleNegativeIndex(index, seq) {
+  if (index < 0) {
+    index = seq.length + index;
+  }
+  return index;
+}
