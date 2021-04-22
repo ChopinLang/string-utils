@@ -8,6 +8,7 @@ import decapitalize from "./case/decapitalize";
 import downcase from "./case/downcase";
 import kebabCase from "./case/kebabcase";
 import pascalCase from "./case/pascalcase";
+import snakeCase from "./case/snakecase";
 
 /**
  * Functions to encode and decode strings
@@ -55,6 +56,7 @@ export default {
   downcase: downcase,
   kebabCase: kebabCase,
   pascalCase: pascalCase,
+  snakeCase: snakeCase,
 
   // Encode
   decodeCodePoints: decodeCodePoints,
