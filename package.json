@@ -1,6 +1,6 @@
 {
   "name": "@nyxlang/string-utils",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "String manipulation and processing functions",
   "main": "src/index.js",
   "type": "module",
