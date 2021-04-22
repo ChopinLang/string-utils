@@ -1,4 +1,4 @@
-import { su } from "../../src";
+import * as su from "../../src";
 
 // Skipping because su.words imports a dependency that breaks Jest
 describe("Decapitalize a string based on the options passed in", () => {

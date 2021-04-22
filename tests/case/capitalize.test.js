@@ -1,4 +1,4 @@
-import { su } from "../../src";
+import * as su from "../../src";
 
 // Skipping because importing words breaks Jest due to issues with importing dependency
 describe("Capitalize the first letter of a string according to options passed into the function", () => {

@@ -1,4 +1,4 @@
-import { su } from "../../src";
+import * as su from "../../src";
 
 describe("Split a string into numeric JS char codes", () => {
   test("It should split a string of basic Latin characters", () => {

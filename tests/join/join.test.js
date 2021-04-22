@@ -1,4 +1,4 @@
-import { su } from "../../src";
+import * as su from "../../src";
 
 describe("Join an array of Unicode scalar values, often called 'characters' and represented by single Unicode code points", () => {
   test("Join an array of simple ASCII characters", () => {

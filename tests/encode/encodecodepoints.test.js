@@ -1,4 +1,4 @@
-import { su } from "../../src";
+import * as su from "../../src";
 
 describe("Split a string into an array of its Unicode code points", () => {
   test("It should split a simple ASCII string", () => {

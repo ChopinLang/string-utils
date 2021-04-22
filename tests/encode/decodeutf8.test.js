@@ -1,4 +1,4 @@
-import { su } from "../../src";
+import * as su from "../../src";
 
 describe("Decode a string from a UTF-8 byte array", () => {
   test("It should decode an encoded ASCII string", () => {

@@ -1,4 +1,4 @@
-import { su } from "../../src";
+import * as su from "../../src";
 
 // Skipping because for some reason Jest won't resolve
 // the import for the dependency module.

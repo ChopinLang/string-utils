@@ -1,4 +1,4 @@
-import { su } from "../../src";
+import * as su from "../../src";
 
 // Skipping because Jest can't resolve a dependency even though it works
 // when I run node directly on the file with the test case present

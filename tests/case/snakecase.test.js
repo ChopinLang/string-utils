@@ -1,4 +1,4 @@
-import { su } from "../../src";
+import * as su from "../../src";
 
 describe("Convert a string to snake_case", () => {
   test("It should convert a string to snake_case", () => {
