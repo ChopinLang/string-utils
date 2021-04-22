@@ -1,7 +1,11 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-const string_js_1 = require("../helpers/string.js");
+const helpers_1 = __importDefault(require("@nyxlang/helpers"));
+const { coerceToString } = helpers_1.default;
 function titleCase(subject) {
-    subject = string_js_1.coerceToString(subject);
+    subject = coerceToString(subject);
 }
 exports.default = titleCase;

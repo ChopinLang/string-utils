@@ -3,8 +3,9 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const string_js_1 = require("../helpers/string.js");
+const helpers_1 = __importDefault(require("@nyxlang/helpers"));
 const grapheme_iterator_js_1 = __importDefault(require("../lib/grapheme_iterator.js"));
+const { coerceToString } = helpers_1.default;
 /**
  * Splits a string into an array of Unicode extended grapheme clusters.
  * These more closely correspond to what the reader perceives as
@@ -23,7 +24,7 @@ const grapheme_iterator_js_1 = __importDefault(require("../lib/grapheme_iterator
  * // => ['अ', 'नु', 'च्', 'छे', 'द']
  */
 function graphemes(subject) {
-    subject = string_js_1.coerceToString(subject);
+    subject = coerceToString(subject);
     return [...grapheme_iterator_js_1.default(subject)];
 }
 exports.default = graphemes;

@@ -1,1 +1,1 @@
-{"type":"commonjs","dependencies":{"unicode-default-word-boundary":"^13.0.0"}}
+{"type":"commonjs","dependencies":{"@nyxlang/helpers":"^0.0.2","unicode-default-word-boundary":"^13.0.0"}}

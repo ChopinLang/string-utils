@@ -1,4 +1,5 @@
-import { coerceToString } from "../helpers/string.js";
+import helpers from "@nyxlang/helpers";
+const { coerceToString } = helpers;
 /**
  * Encodes a string into an array of UTF-8 code unit values. From {@link https://stackoverflow.com/a/18729931}
  *

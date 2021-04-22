@@ -1,11 +1,4 @@
 /**
- * A function to determine if an object is a RegExp
- * @ignore
- */
-export function isRegExp(obj) {
-    return obj instanceof RegExp;
-}
-/**
  * A regular expression string matching digits
  *
  * @type {string}

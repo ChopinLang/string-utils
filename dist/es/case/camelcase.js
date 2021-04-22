@@ -1,7 +1,8 @@
-import { coerceToString } from "../helpers/string.js";
+import helpers from "@nyxlang/helpers";
 import capitalize from "./capitalize.js";
 import words from "../split/words.js";
 import stripPunc from "../strip/strippunc.js";
+const { coerceToString } = helpers;
 /**
  * Converts `subject` to {@link https://en.wikipedia.org/wiki/Camel_case camelCase}.
  * @function camelCase

@@ -1,6 +1,10 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-const string_js_1 = require("../helpers/string.js");
+const helpers_1 = __importDefault(require("@nyxlang/helpers"));
+const { coerceToString } = helpers_1.default;
 /**
  * @function decapitalize
  * @static
@@ -25,7 +29,7 @@ const string_js_1 = require("../helpers/string.js");
  * // => "istanbul"
  */
 function decapitalize(subject, { lower = false, all = false, locale = "en-US" } = {}) {
-    subject = string_js_1.coerceToString(subject);
+    subject = coerceToString(subject);
     let str = subject[0].toLocaleLowerCase(locale) + subject.slice(1);
     if (lower) {
         str = str[0] + str.slice(1).toLocaleLowerCase(locale);

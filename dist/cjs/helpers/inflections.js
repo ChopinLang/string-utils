@@ -7,4 +7,11 @@ Object.defineProperty(exports, "__esModule", { value: true });
  * @module Inflections
  * @namespace String
  */
-let InflectionSet;
+let Inflections = {
+    plural: null,
+    singular: null,
+    human: null,
+    acronyms: null,
+    downcased: null,
+};
+module.exports = Inflections;

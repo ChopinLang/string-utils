@@ -3,8 +3,9 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const string_js_1 = require("../helpers/string.js");
+const helpers_1 = __importDefault(require("@nyxlang/helpers"));
 const words_js_1 = __importDefault(require("../split/words.js"));
+const { coerceToString } = helpers_1.default;
 /**
  * Convert a string to upper or lower snake_case
  *
@@ -26,7 +27,7 @@ const words_js_1 = __importDefault(require("../split/words.js"));
  * // => "THIS_IS_A_STRING"
  */
 function snakeCase(subject, { upper = false, locale = "en-US" } = {}) {
-    subject = string_js_1.coerceToString(subject);
+    subject = coerceToString(subject);
     const ws = words_js_1.default(subject);
     let str = ws.reduce((st, word) => (st += `_${word}`));
     if (upper) {

@@ -1,6 +1,10 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-const string_js_1 = require("../helpers/string.js");
+const helpers_1 = __importDefault(require("@nyxlang/helpers"));
+const { coerceToString } = helpers_1.default;
 /**
  * Convert a string to lowercase based on locale information
  *
@@ -19,7 +23,7 @@ const string_js_1 = require("../helpers/string.js");
  * // => "i̇stanbul"
  */
 function downcase(subject, locale = "en-US") {
-    subject = string_js_1.coerceToString(subject);
+    subject = coerceToString(subject);
     return subject.toLocaleLowerCase(locale);
 }
 exports.default = downcase;

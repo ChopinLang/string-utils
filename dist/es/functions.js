@@ -2,44 +2,44 @@
  * Functions to change string casing
  * @namespace Case
  */
-import camelCase from "./case/camelcase";
-import capitalize from "./case/capitalize";
-import decapitalize from "./case/decapitalize";
-import downcase from "./case/downcase";
-import kebabCase from "./case/kebabcase";
-import pascalCase from "./case/pascalcase";
-import snakeCase from "./case/snakecase";
+import camelCase from "./case/camelcase.js";
+import capitalize from "./case/capitalize.js";
+import decapitalize from "./case/decapitalize.js";
+import downcase from "./case/downcase.js";
+import kebabCase from "./case/kebabcase.js";
+import pascalCase from "./case/pascalcase.js";
+import snakeCase from "./case/snakecase.js";
 /**
  * Functions to encode and decode strings
  * @namespace Encode
  */
-import decodeCodePoints from "./encode/decodecodepoints";
-import decodeUTF8 from "./encode/decodeutf8";
-import decodeUTF16 from "./encode/decodeutf16";
-import encodeCodePoints from "./encode/encodecodepoints";
-import encodeUTF8 from "./encode/encodeutf8";
-import encodeUTF16 from "./encode/encodeutf16";
+import decodeCodePoints from "./encode/decodecodepoints.js";
+import decodeUTF8 from "./encode/decodeutf8.js";
+import decodeUTF16 from "./encode/decodeutf16.js";
+import encodeCodePoints from "./encode/encodecodepoints.js";
+import encodeUTF8 from "./encode/encodeutf8.js";
+import encodeUTF16 from "./encode/encodeutf16.js";
 /**
  * Functions to join strings
  * @namespace Join
  */
-import join from "./join/join";
+import join from "./join/join.js";
 /**
  * Functions to query strings
  * @namespace Query
  */
-import isString from "./query/isstring";
+import isString from "./query/isstring.js";
 /**
  * Functions to split a string
  * @namespace Split
  */
-import graphemes from "./split/graphemes";
-import scalars from "./split/scalars";
-import words from "./split/words";
+import graphemes from "./split/graphemes.js";
+import scalars from "./split/scalars.js";
+import words from "./split/words.js";
 /**
  * Functions to strip characters from a string
  */
-import stripPunc from "./strip/strippunc";
+import stripPunc from "./strip/strippunc.js";
 // Can't use object property shorthand because
 // then JSDoc names functions incorrectly
 export default {

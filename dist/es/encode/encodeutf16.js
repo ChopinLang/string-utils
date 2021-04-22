@@ -1,4 +1,5 @@
-import { coerceToString } from "../helpers/string";
+import helpers from "@nyxlang/helpers";
+const { coerceToString } = helpers;
 /**
  * Split a string into an array of its UTF-16 char codes
  *

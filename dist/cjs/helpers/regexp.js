@@ -1,14 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.REGEXP_WORD = exports.REGEXP_LATIN_WORD = exports.REGEXP_EXTENDED_ASCII = exports.IS_PUNCTUATION = exports.REGEXP_PUNCTUATION = exports.TRIM_CHARS = exports.diacriticalMark = exports.whitespace = exports.digit = exports.isRegExp = void 0;
-/**
- * A function to determine if an object is a RegExp
- * @ignore
- */
-function isRegExp(obj) {
-    return obj instanceof RegExp;
-}
-exports.isRegExp = isRegExp;
+exports.REGEXP_WORD = exports.REGEXP_LATIN_WORD = exports.REGEXP_EXTENDED_ASCII = exports.IS_PUNCTUATION = exports.REGEXP_PUNCTUATION = exports.TRIM_CHARS = exports.diacriticalMark = exports.whitespace = exports.digit = void 0;
 /**
  * A regular expression string matching digits
  *

@@ -1,9 +1,12 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 const unicode_default_word_boundary_1 = require("unicode-default-word-boundary");
-const string_js_1 = require("../helpers/string.js");
+const helpers_1 = __importDefault(require("@nyxlang/helpers"));
 const regexp_js_1 = require("../helpers/regexp.js");
-const null_js_1 = require("../helpers/null.js");
+const { coerceToString, isNil, nilDefault } = helpers_1.default;
 /**
  * Splits a string into words using {@link http://www.unicode.org/reports/tr29/ Unicode UAX #29} and strips punctuation
  *
@@ -24,10 +27,10 @@ const null_js_1 = require("../helpers/null.js");
  * // => ["this", "Is", "A", "String", "To", "Split"]
  */
 function words(subject, pattern, flags) {
-    subject = string_js_1.coerceToString(subject);
+    subject = coerceToString(subject);
     const sansUnderscores = subject.replace(/_/g, " ");
     let regexp;
-    if (null_js_1.isNil(pattern)) {
+    if (isNil(pattern)) {
         let ws = unicode_default_word_boundary_1.split(sansUnderscores).filter((word) => !regexp_js_1.IS_PUNCTUATION.test(word));
         ws = ws.map((w) => {
             regexp = regexp_js_1.REGEXP_EXTENDED_ASCII.test(w) ? regexp_js_1.REGEXP_LATIN_WORD : regexp_js_1.REGEXP_WORD;
@@ -49,9 +52,9 @@ function words(subject, pattern, flags) {
         regexp = pattern;
     }
     else {
-        const flagString = string_js_1.coerceToString(null_js_1.nilDefault(flags, ""));
-        regexp = new RegExp(string_js_1.coerceToString(pattern), flagString);
+        const flagString = coerceToString(nilDefault(flags, ""));
+        regexp = new RegExp(coerceToString(pattern), flagString);
     }
-    return null_js_1.nilDefault(w.match(regexp), []);
+    return nilDefault(w.match(regexp), []);
 }
 exports.default = words;

@@ -1,6 +1,10 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-const string_js_1 = require("../helpers/string.js");
+const helpers_1 = __importDefault(require("@nyxlang/helpers"));
+const { coerceToString } = helpers_1.default;
 /**
  * Encodes a string into an array of UTF-8 code unit values. From {@link https://stackoverflow.com/a/18729931}
  *
@@ -17,7 +21,7 @@ const string_js_1 = require("../helpers/string.js");
  * // => [0xf0, 0x9f, 0x98, 0x80, 0xf0, 0x9f, 0x98, 0x81]
  */
 function encodeUTF8(subject) {
-    subject = string_js_1.coerceToString(subject);
+    subject = coerceToString(subject);
     let utf8 = [];
     for (var i = 0; i < subject.length; i++) {
         let charcode = subject.charCodeAt(i);

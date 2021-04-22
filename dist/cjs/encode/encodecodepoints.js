@@ -1,6 +1,10 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-const string_js_1 = require("../helpers/string.js");
+const helpers_1 = __importDefault(require("@nyxlang/helpers"));
+const { coerceToString } = helpers_1.default;
 /**
  * Split a string into an array of its numeric Unicode code points
  *
@@ -19,7 +23,7 @@ const string_js_1 = require("../helpers/string.js");
  * // => [0x905, 0x928, 0x941, 0x91a, 0x94d, 0x91b, 0x947, 0x926]
  */
 function encodeCodePoints(subject) {
-    subject = string_js_1.coerceToString(subject);
+    subject = coerceToString(subject);
     return [...subject].map((scalar) => scalar.codePointAt(0));
 }
 exports.default = encodeCodePoints;

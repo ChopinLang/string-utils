@@ -1,6 +1,10 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-const string_1 = require("../helpers/string");
+const helpers_1 = __importDefault(require("@nyxlang/helpers"));
+const { coerceToString } = helpers_1.default;
 /**
  * Split a string into an array of its UTF-16 char codes
  *
@@ -17,7 +21,7 @@ const string_1 = require("../helpers/string");
  * // => [55357, 56833, 55357, 56374, 55356, 57173]
  */
 function charCodes(subject) {
-    subject = string_1.coerceToString(subject);
+    subject = coerceToString(subject);
     return subject.split("").map((char) => char.charCodeAt(0));
 }
 exports.default = charCodes;

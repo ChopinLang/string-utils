@@ -1,5 +1,6 @@
-import { coerceToString } from "../helpers/string.js";
+import helpers from "@nyxlang/helpers";
 import { REGEXP_PUNCTUATION } from "../helpers/regexp.js";
+const { coerceToString } = helpers;
 /**
  * Strip punctuation marks from a string
  *

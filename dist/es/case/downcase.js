@@ -1,4 +1,5 @@
-import { coerceToString } from "../helpers/string.js";
+import helpers from "@nyxlang/helpers";
+const { coerceToString } = helpers;
 /**
  * Convert a string to lowercase based on locale information
  *

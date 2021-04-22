@@ -1,4 +1,5 @@
-import { coerceToString } from "../helpers/string.js";
+import helpers from "@nyxlang/helpers";
+const { coerceToString } = helpers;
 /**
  * Splits a string into an array of its Unicode scalar values, each
  * of which is represented by a single Unicode code point. Many

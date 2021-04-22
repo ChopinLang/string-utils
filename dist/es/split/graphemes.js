@@ -1,5 +1,6 @@
-import { coerceToString } from "../helpers/string.js";
+import helpers from "@nyxlang/helpers";
 import grapheme_iterator from "../lib/grapheme_iterator.js";
+const { coerceToString } = helpers;
 /**
  * Splits a string into an array of Unicode extended grapheme clusters.
  * These more closely correspond to what the reader perceives as
