@@ -14,4 +14,5 @@ let Inflections = {
   acronyms: null,
   downcased: null,
 };
-let InflectionSet;
+
+module.exports = Inflections;
