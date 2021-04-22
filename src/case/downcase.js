@@ -9,6 +9,8 @@ import { coerceToString } from "../helpers/string.js";
  * @memberof Case
  * @param {string} subject String to downcase
  * @param {string|string[]} locale Locale information or an array of locales
+ * @throws {RangeError} if locale is not a valid language tag
+ * @throws {TypeError} if an array element in the locale param is not a string
  * @example
  * su.downcase("This IS A StRiNg")
  * // => "this is a string"
