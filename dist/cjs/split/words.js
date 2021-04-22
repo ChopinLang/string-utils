@@ -6,7 +6,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const unicode_default_word_boundary_1 = require("unicode-default-word-boundary");
 const helpers_1 = __importDefault(require("@nyxlang/helpers"));
 const regexp_js_1 = require("../helpers/regexp.js");
-const { coerceToString, isNil, nilDefault } = helpers_1.default;
+const { coerceToString, isNil, isRegExp, nilDefault } = helpers_1.default;
 /**
  * Splits a string into words using {@link http://www.unicode.org/reports/tr29/ Unicode UAX #29} and strips punctuation
  *
@@ -48,7 +48,7 @@ function words(subject, pattern, flags) {
         }, []);
         return ws;
     }
-    else if (regexp_js_1.isRegExp(pattern)) {
+    else if (isRegExp(pattern)) {
         regexp = pattern;
     }
     else {
