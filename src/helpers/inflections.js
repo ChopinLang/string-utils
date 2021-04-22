@@ -7,5 +7,11 @@ import { DOWNCASED_WORDS } from "./constants.js";
  * @module Inflections
  * @namespace String
  */
-
+let Inflections = {
+  plural: null,
+  singular: null,
+  human: null,
+  acronyms: null,
+  downcased: null,
+};
 let InflectionSet;
