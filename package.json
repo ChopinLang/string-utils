@@ -56,7 +56,7 @@
     "voca": "^1.4.0"
   },
   "dependencies": {
-    "@nyxlang/helpers": "^0.1.0",
+    "@nyxlang/helpers": "^0.1.1",
     "unicode-default-word-boundary": "^13.0.0"
   }
 }
