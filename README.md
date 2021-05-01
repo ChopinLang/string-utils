@@ -29,7 +29,11 @@ Or simply import the individual functions you need:
 import { camelCase, decodeUTF8, graphemes } from "@chopinlang/string-utils";
 
 // CommonJS
-const { camelCase, decodeUTF8, graphemes } = require("@chopinlang/string-utils");
+const {
+  camelCase,
+  decodeUTF8,
+  graphemes,
+} = require("@chopinlang/string-utils");
 ```
 
 Then simply call library functions as methods on the `su` object:

@@ -1,1 +1,1 @@
-{"type":"module","dependencies":{"@chopinlang/helpers":"^0.1.2","unicode-default-word-boundary":"^13.0.0"}}
+{"type":"module","dependencies":{"@chopinlang/helpers":"^0.2.1","unicode-default-word-boundary":"^13.0.0"}}
