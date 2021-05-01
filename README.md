@@ -1,6 +1,6 @@
-# Nyx String Utilities
+# Chopin String Utilities
 
-Nyx String Utilities offers a wide range of string processing and manipulation functions to handle a wide variety of text wrangling tasks. The library is the backbone of the [Nyx Programming Language's](https://github.com/NyxLang/nyx) String type, but it is also perfectly suitable for use in other projects.
+Chopin String Utilities offers a wide range of string processing and manipulation functions to handle a wide variety of text wrangling tasks. The library is the backbone of the [Chopin Programming Language's](https://github.com/ChopinLang/ChopinLang) String type, but it is also perfectly suitable for use in other projects.
 
 ## Installation
 
