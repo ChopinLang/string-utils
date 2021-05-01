@@ -1,4 +1,4 @@
-import helpers from "@nyxlang/helpers";
+import helpers from "@chopinlang/helpers";
 const { coerceToString } = helpers;
 /**
  * Convert a string to lowercase based on locale information

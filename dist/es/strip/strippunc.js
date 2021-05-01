@@ -1,4 +1,4 @@
-import helpers from "@nyxlang/helpers";
+import helpers from "@chopinlang/helpers";
 import { REGEXP_PUNCTUATION } from "../helpers/regexp.js";
 const { coerceToString } = helpers;
 /**

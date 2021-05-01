@@ -3,7 +3,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const helpers_1 = __importDefault(require("@nyxlang/helpers"));
+const helpers_1 = __importDefault(require("@chopinlang/helpers"));
 const words_js_1 = __importDefault(require("../split/words.js"));
 const { coerceToString } = helpers_1.default;
 /**

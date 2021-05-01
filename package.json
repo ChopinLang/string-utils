@@ -4,7 +4,7 @@
   "description": "String manipulation and processing functions",
   "main": "src/index.js",
   "type": "module",
-  "homepage": "https://nyxlang.github.io/string-utils/",
+  "homepage": "https://chopinlang.github.io/string-utils/",
   "exports": {
     ".": {
       "import": "./dist/es/index.js",
@@ -28,7 +28,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nyxlang/string-utils.git"
+    "url": "git+https://github.com/chopinlang/string-utils.git"
   },
   "keywords": [
     "string",
@@ -37,7 +37,7 @@
   "author": "Jason Barr <jason@jasonsbarr.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/nyxlang/string-utils/issues"
+    "url": "https://github.com/chopinlang/string-utils/issues"
   },
   "devDependencies": {
     "@babel/core": "^7.13.15",
@@ -56,7 +56,7 @@
     "voca": "^1.4.0"
   },
   "dependencies": {
-    "@nyxlang/helpers": "^0.1.2",
+    "@chopinlang/helpers": "^0.2.1",
     "unicode-default-word-boundary": "^13.0.0"
   }
 }

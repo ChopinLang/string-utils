@@ -1,4 +1,4 @@
-import helpers from "@nyxlang/helpers";
+import helpers from "@chopinlang/helpers";
 const { coerceToString } = helpers;
 /**
  * Splits a string into an array of its Unicode scalar values, each

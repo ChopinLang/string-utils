@@ -3,7 +3,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const helpers_1 = __importDefault(require("@nyxlang/helpers"));
+const helpers_1 = __importDefault(require("@chopinlang/helpers"));
 const { coerceToString } = helpers_1.default;
 /**
  * Encodes a string into an array of UTF-8 code unit values. From {@link https://stackoverflow.com/a/18729931}

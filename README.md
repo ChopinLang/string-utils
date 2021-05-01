@@ -5,7 +5,7 @@ Chopin String Utilities offers a wide range of string processing and manipulatio
 ## Installation
 
 ```
-npm install @nyxlang/string-utils
+npm install @chopinlang/string-utils
 ```
 
 ## Usage
@@ -13,23 +13,23 @@ npm install @nyxlang/string-utils
 You can use the ES2015 import statement to include the package:
 
 ```js
-import * as su from "@nyxlang/string-utils";
+import * as su from "@chopinlang/string-utils";
 ```
 
 Or if you need CommonJS you can require it:
 
 ```js
-const su = require("@nyxlang/string-utils");
+const su = require("@chopinlang/string-utils");
 ```
 
 Or simply import the individual functions you need:
 
 ```js
 // ES2015 import
-import { camelCase, decodeUTF8, graphemes } from "@nyxlang/string-utils";
+import { camelCase, decodeUTF8, graphemes } from "@chopinlang/string-utils";
 
 // CommonJS
-const { camelCase, decodeUTF8, graphemes } = require("@nyxlang/string-utils");
+const { camelCase, decodeUTF8, graphemes } = require("@chopinlang/string-utils");
 ```
 
 Then simply call library functions as methods on the `su` object:
@@ -45,4 +45,4 @@ decodeUTF8([0xf0, 0x9f, 0x98, 0x80, 0xf0, 0x9f, 0x98, 0x81]);
 // => "😀😁"
 ```
 
-[Complete API documentation](https://nyxlang.github.io/string-utils/)
+[Complete API documentation](https://chopinlang.github.io/string-utils/)

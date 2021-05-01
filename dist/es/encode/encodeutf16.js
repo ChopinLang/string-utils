@@ -1,4 +1,4 @@
-import helpers from "@nyxlang/helpers";
+import helpers from "@chopinlang/helpers";
 const { coerceToString } = helpers;
 /**
  * Split a string into an array of its UTF-16 char codes

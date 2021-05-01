@@ -19,11 +19,11 @@
 
     <h1 class="page-title">Home</h1>
 
-    
 
 
 
-    
+
+
 
 
     <h3> </h3>
@@ -37,7 +37,7 @@
 
 
 
-    
+
 
 
 
@@ -46,21 +46,21 @@
         <article><h1>Chopin String Utilities</h1>
 <p>Chopin String Utilities offers a wide range of string processing and manipulation functions to handle a wide variety of text wrangling tasks. The library is the backbone of the <a href="https://github.com/ChopinLang/ChopinLang">Chopin Programming Language's</a> String type, but it is also perfectly suitable for use in other projects.</p>
 <h2>Installation</h2>
-<pre class="prettyprint source"><code>npm install @nyxlang/string-utils
+<pre class="prettyprint source"><code>npm install @chopinlang/string-utils
 </code></pre>
 <h2>Usage</h2>
 <p>You can use the ES2015 import statement to include the package:</p>
-<pre class="prettyprint source lang-js"><code>import * as su from &quot;@nyxlang/string-utils&quot;;
+<pre class="prettyprint source lang-js"><code>import * as su from &quot;@chopinlang/string-utils&quot;;
 </code></pre>
 <p>Or if you need CommonJS you can require it:</p>
-<pre class="prettyprint source lang-js"><code>const su = require(&quot;@nyxlang/string-utils&quot;);
+<pre class="prettyprint source lang-js"><code>const su = require(&quot;@chopinlang/string-utils&quot;);
 </code></pre>
 <p>Or simply import the individual functions you need:</p>
 <pre class="prettyprint source lang-js"><code>// ES2015 import
-import { camelCase, decodeUTF8, graphemes } from &quot;@nyxlang/string-utils&quot;;
+import { camelCase, decodeUTF8, graphemes } from &quot;@chopinlang/string-utils&quot;;
 
 // CommonJS
-const { camelCase, decodeUTF8, graphemes } = require(&quot;@nyxlang/string-utils&quot;);
+const { camelCase, decodeUTF8, graphemes } = require(&quot;@chopinlang/string-utils&quot;);
 </code></pre>
 <p>Then simply call library functions as methods on the <code>su</code> object:</p>
 <pre class="prettyprint source lang-js"><code>camelcase(&quot;++this-__is-spartaaaaa++&quot;);
@@ -72,7 +72,7 @@ graphemes(&quot;अनुच्छेद&quot;);
 decodeUTF8([0xf0, 0x9f, 0x98, 0x80, 0xf0, 0x9f, 0x98, 0x81]);
 // => &quot;😀😁&quot;
 </code></pre>
-<p><a href="https://nyxlang.github.io/string-utils/">Complete API documentation</a></p></article>
+<p><a href="https://chopinlang.github.io/string-utils/">Complete API documentation</a></p></article>
     </section>
 
 

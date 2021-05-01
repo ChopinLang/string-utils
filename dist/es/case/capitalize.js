@@ -1,4 +1,4 @@
-import helpers from "@nyxlang/helpers";
+import helpers from "@chopinlang/helpers";
 const { coerceToString } = helpers;
 /**
  * Capitalizes the first letter of a string. If lower is true, downcases the rest

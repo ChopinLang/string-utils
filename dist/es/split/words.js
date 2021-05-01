@@ -1,5 +1,5 @@
 import { split } from "unicode-default-word-boundary";
-import helpers from "@nyxlang/helpers";
+import helpers from "@chopinlang/helpers";
 import { IS_PUNCTUATION, REGEXP_EXTENDED_ASCII, REGEXP_LATIN_WORD, REGEXP_WORD, } from "../helpers/regexp.js";
 const { coerceToString, isNil, isRegExp, nilDefault } = helpers;
 /**

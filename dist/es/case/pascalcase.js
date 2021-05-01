@@ -1,4 +1,4 @@
-import helpers from "@nyxlang/helpers";
+import helpers from "@chopinlang/helpers";
 import words from "../split/words.js";
 import capitalize from "./capitalize.js";
 import stripPunc from "../strip/strippunc.js";

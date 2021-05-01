@@ -4,7 +4,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const unicode_default_word_boundary_1 = require("unicode-default-word-boundary");
-const helpers_1 = __importDefault(require("@nyxlang/helpers"));
+const helpers_1 = __importDefault(require("@chopinlang/helpers"));
 const regexp_js_1 = require("../helpers/regexp.js");
 const { coerceToString, isNil, isRegExp, nilDefault } = helpers_1.default;
 /**

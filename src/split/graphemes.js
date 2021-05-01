@@ -1,4 +1,4 @@
-import helpers from "@nyxlang/helpers";
+import helpers from "@chopinlang/helpers";
 import grapheme_iterator from "../lib/grapheme_iterator.js";
 
 const { coerceToString } = helpers;
