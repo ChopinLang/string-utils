@@ -16,7 +16,8 @@
   ],
   "scripts": {
     "build": "rm -rf dist/ && tsc -p tsconfig.json && tsc -p tsconfig-cjs.json && node ./scripts/set-package-json.js",
-    "publish-package": "npm run build && npm run docs && git add . && git commit -m 'Publish to NPM' && git push && npm publish",
+    "publish:package": "npm run build && npm run docs && npm run publish:push && npm publish",
+    "publish:push": "git add . && git commit -m 'Publish to NPM' && git push",
     "test": "jest",
     "test:all": "jest --all",
     "test:watch": "jest --watch",
@@ -50,13 +51,12 @@
     "husky": "^6.0.0",
     "jest": "^26.6.3",
     "jsdoc": "^3.6.6",
-    "lint-staged": "^10.5.4",
     "prettier": "^2.2.1",
     "typescript": "^4.2.4",
     "voca": "^1.4.0"
   },
   "dependencies": {
-    "@nyxlang/helpers": "^0.1.1",
+    "@nyxlang/helpers": "^0.1.2",
     "unicode-default-word-boundary": "^13.0.0"
   }
 }
